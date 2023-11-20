@@ -1,6 +1,17 @@
 public class BinarySearch {
+
+    static void print(int arr[],int start,int end)
+    {
+        for(int i = start; i <= end;i++)
+        {
+            // System.out.print(arr[i]);
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
     public static boolean binarySearch(int Arr[],int start,int end,int element)
     {
+        print(Arr,start,end);
         if(start > end)
         {
             return false;
