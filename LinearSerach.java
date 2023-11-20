@@ -10,6 +10,7 @@ public class LinearSerach
     }
     public static boolean linearSearchHelper(int Arr[],int index,int size,int element)
     {
+        // base case
         if(index == size)
         {
             return false;
