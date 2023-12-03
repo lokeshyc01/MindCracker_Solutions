@@ -13,7 +13,7 @@ public class CheckPalindromeRec
         }
         else
         {
-            return palindrom(arr, ++start, --end);
+            return palindrom(arr, ++start, end--);
         }
     }
     public static void main(String arr[])
