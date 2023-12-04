@@ -1,6 +1,6 @@
 public class CheckPalindromeRec 
 {
-    public static boolean palindrom(char arr[],int start,int end)
+    public static boolean palindrome(char arr[],int start,int end)
     {
         if(start > end)
         {
@@ -13,12 +13,12 @@ public class CheckPalindromeRec
         }
         else
         {
-            return palindrom(arr, ++start, end--);
+            return palindrome(arr, ++start, --end);
         }
     }
     public static void main(String arr[])
     {
-        if(palindrom("abba".toCharArray(),0,"abba".length() - 1))
+        if(palindrome("abba".toCharArray(),0,"abba".length() - 1))
         {
             System.out.println("string is palindrome");
         }
