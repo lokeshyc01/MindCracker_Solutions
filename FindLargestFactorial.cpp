@@ -16,8 +16,8 @@ public:
         }
         
         while(carry > 0){
-            carry = carry % 10;
-            arr[size] = carry;
+            
+            arr[size] = carry % 10;
             size++;
             carry= carry / 10;
         }
